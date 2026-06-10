@@ -1,0 +1,109 @@
+/* ─── デザイントークン ───
+   テーマは <html data-theme="dark|light"> で切り替える。
+   コンポーネントは必ずこの変数を参照し、生の色値を書かない。 */
+
+:root {
+  /* タイポグラフィ */
+  --font-sans: "DM Sans", "Noto Sans JP", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
+
+  /* 角丸 */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+
+  /* モーション */
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-flip: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #0b0c12;
+  --surface: #14161f;
+  --surface-2: #1a1d2b;
+  --surface-3: #222538;
+  --border: #232636;
+  --border-strong: #303449;
+  --divider: #262a3c;
+
+  --text: #ecebf5;
+  --text-sub: #aaa7bf;
+  --text-muted: #767390;
+  --text-faint: #4b4862;
+
+  --accent: #8b7cf8;
+  --accent-strong: #a99bff;
+  --on-accent: #ffffff;
+  --accent-soft: rgba(139, 124, 248, 0.1);
+  --accent-border: rgba(139, 124, 248, 0.3);
+  --hl: #c9b8ff;
+
+  --success: #3ddc97;
+  --success-soft: rgba(61, 220, 151, 0.12);
+  --success-border: rgba(61, 220, 151, 0.35);
+  --warning: #f6c145;
+  --warning-soft: rgba(246, 193, 69, 0.12);
+  --warning-border: rgba(246, 193, 69, 0.35);
+  --danger: #f4708a;
+  --danger-soft: rgba(244, 112, 138, 0.12);
+  --danger-border: rgba(244, 112, 138, 0.35);
+
+  --card-bg: linear-gradient(165deg, #181b29 0%, #13151f 100%);
+  --card-border: #262a3e;
+  --card-stack-bg: #111320;
+  --card-stack-border: #1d2030;
+  --card-ghost-text: #585570;
+  --card-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
+
+  --overlay: rgba(0, 0, 0, 0.72);
+  --fab-shadow: 0 6px 20px rgba(139, 124, 248, 0.35);
+  --row-shadow: none;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #f3f1ec;
+  --surface: #fbfaf7;
+  --surface-2: #edebe3;
+  --surface-3: #e4e1d6;
+  --border: #e0dcd1;
+  --border-strong: #cfcaba;
+  --divider: #e6e3d9;
+
+  --text: #2c2937;
+  --text-sub: #5d5a6e;
+  --text-muted: #8b879b;
+  --text-faint: #bcb8c8;
+
+  --accent: #6d5ae0;
+  --accent-strong: #5a47cc;
+  --on-accent: #ffffff;
+  --accent-soft: rgba(109, 90, 224, 0.09);
+  --accent-border: rgba(109, 90, 224, 0.28);
+  --hl: #5f4bd8;
+
+  --success: #2b9e74;
+  --success-soft: rgba(43, 158, 116, 0.12);
+  --success-border: rgba(43, 158, 116, 0.35);
+  --warning: #b8860f;
+  --warning-soft: rgba(184, 134, 15, 0.12);
+  --warning-border: rgba(184, 134, 15, 0.35);
+  --danger: #d2536d;
+  --danger-soft: rgba(210, 83, 109, 0.1);
+  --danger-border: rgba(210, 83, 109, 0.32);
+
+  --card-bg: linear-gradient(165deg, #fffefb 0%, #f8f6f0 100%);
+  --card-border: #e5e1d5;
+  --card-stack-bg: #eceade;
+  --card-stack-border: #dfdccd;
+  --card-ghost-text: #aba692;
+  --card-shadow: 0 6px 24px rgba(60, 54, 40, 0.14);
+
+  --overlay: rgba(44, 41, 55, 0.42);
+  --fab-shadow: 0 6px 18px rgba(109, 90, 224, 0.32);
+  --row-shadow: 0 1px 2px rgba(60, 54, 40, 0.04);
+}
