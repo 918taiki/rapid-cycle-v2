@@ -228,7 +228,7 @@ export function HomeView() {
           )}
           {dueCount > 0 && (
             <button
-              className="entry-card entry-card--due"
+              className="entry-card"
               onClick={() => navigate("review")}
               disabled={reorderMode}
             >

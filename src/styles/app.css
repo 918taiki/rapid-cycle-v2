@@ -333,11 +333,6 @@ button:disabled {
   transform: scale(0.98);
 }
 
-.entry-card--due {
-  border-color: var(--accent-border);
-  background: var(--accent-soft);
-}
-
 .entry-card--full {
   width: 100%;
   margin-bottom: 14px;
@@ -359,8 +354,8 @@ button:disabled {
 }
 
 .entry-card__icon--repeat {
-  background: var(--success-soft);
-  color: var(--success);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
 }
 
 .entry-card__text {
