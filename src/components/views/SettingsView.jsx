@@ -78,16 +78,22 @@ export function SettingsView() {
             <p className="section-label">テーマ</p>
             <div className="theme-row">
               <button
-                className={`theme-btn${theme === "dark" ? " theme-btn--active" : ""}`}
-                onClick={() => setSettings((prev) => ({ ...prev, theme: "dark" }))}
-              >
-                🌙 ダーク
-              </button>
-              <button
                 className={`theme-btn${theme === "light" ? " theme-btn--active" : ""}`}
                 onClick={() => setSettings((prev) => ({ ...prev, theme: "light" }))}
               >
                 ☀️ ライト
+              </button>
+              <button
+                className={`theme-btn${theme === "cool" ? " theme-btn--active" : ""}`}
+                onClick={() => setSettings((prev) => ({ ...prev, theme: "cool" }))}
+              >
+                🌊 クール
+              </button>
+              <button
+                className={`theme-btn${theme === "dark" ? " theme-btn--active" : ""}`}
+                onClick={() => setSettings((prev) => ({ ...prev, theme: "dark" }))}
+              >
+                🌙 ダーク
               </button>
             </div>
           </section>

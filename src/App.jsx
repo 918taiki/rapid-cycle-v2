@@ -20,7 +20,8 @@ import { StudyView } from "./components/views/StudyView.jsx";
 import { ResultView } from "./components/views/ResultView.jsx";
 import { SettingsView } from "./components/views/SettingsView.jsx";
 
-const THEME_BG = { dark: "#0b0c12", light: "#f3f1ec" };
+const THEME_BG = { dark: "#0b0c12", light: "#f3f1ec", cool: "#eef1f6" };
+const THEMES = ["dark", "light", "cool"];
 
 const VIEWS = {
   home: HomeView,
@@ -43,7 +44,7 @@ export default function App() {
   const { route, navigate, replace, resetTo, goBack } = nav;
 
   // テーマ適用（data-theme 属性 + メタ theme-color）
-  const theme = app.settings.theme === "light" ? "light" : "dark";
+  const theme = THEMES.includes(app.settings.theme) ? app.settings.theme : "dark";
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     document.querySelector('meta[name="theme-color"]')?.setAttribute("content", THEME_BG[theme]);

@@ -18,7 +18,8 @@
       (function () {
         try {
           var settings = JSON.parse(localStorage.getItem("rc_settings") || "{}");
-          document.documentElement.dataset.theme = settings.theme === "light" ? "light" : "dark";
+          var themes = ["dark", "light", "cool"];
+          document.documentElement.dataset.theme = themes.indexOf(settings.theme) >= 0 ? settings.theme : "dark";
         } catch (e) {
           document.documentElement.dataset.theme = "dark";
         }

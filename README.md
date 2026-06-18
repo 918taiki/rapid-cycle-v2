@@ -70,13 +70,14 @@ src/
 
 ## Vercel へのデプロイ（PWA）
 
-`vercel.json` を同梱済み。**Root Directory を `rapid-cycle-v2` に設定**すれば、フレームワーク・ビルド設定は自動認識される。
+`vercel.json` を同梱済み。この `rapid-cycle-v2/` 自体を 1 つの GitHub リポジトリとして
+push する前提（リポジトリのルート = このアプリのルート）。
 
 ### 方法 A: GitHub 連携（推奨）
 
-1. リポジトリを push（このアプリは `eitango/rapid-cycle-v2/` 配下にある）
+1. このフォルダを独立した GitHub リポジトリとして push
 2. Vercel で New Project → リポジトリを Import
-3. **Root Directory** に `rapid-cycle-v2` を指定（v1 と同居しているため必須）
+3. **Root Directory** は既定の `./` のまま（リポジトリ直下がアプリなので変更不要）
 4. Framework Preset: `Vite`（自動検出）/ Build: `npm run build` / Output: `dist`
 5. Deploy。以降は push で自動デプロイ
 
