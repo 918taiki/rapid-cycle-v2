@@ -1,6 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#0b0c12"/>
-  <rect x="6" y="8" width="13" height="18" rx="2.5" fill="none" stroke="#c4b5fd" stroke-width="1.8"/>
-  <rect x="12" y="5" width="14" height="19" rx="2.5" fill="#1c1633" stroke="#8b7cf8" stroke-width="1.8"/>
-  <path d="M16.5 14.5l5 0M16.5 18l3.2 0" stroke="#8b7cf8" stroke-width="1.6" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="doc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b7be0"/>
+      <stop offset="1" stop-color="#3a52b0"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="#ffffff"/>
+  <path d="M16 6.5a9.5 9.5 0 1 1-6.7 2.8" fill="none" stroke="#f5a623" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M22.6 23.4l-1.1 4.1-4.1-1.1z" fill="#f5a623"/>
+  <rect x="14" y="10.5" width="7.5" height="11" rx="1.6" fill="#9fb3ec" opacity="0.7"/>
+  <rect x="11" y="11.5" width="7.5" height="11" rx="1.6" fill="url(#doc)"/>
+  <path d="M13.4 15.2h3.6M13.4 17.6h2.3" stroke="#eef2ff" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
